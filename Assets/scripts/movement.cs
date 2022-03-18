@@ -56,6 +56,14 @@ public class movement : MonoBehaviour
             anim.SetBool("down", false);
         }
 
+        if(Movement == new Vector2(0, 0))
+        {
+            anim.SetBool("left", false);
+            anim.SetBool("right", false);
+            anim.SetBool("up", false);
+            anim.SetBool("down", false);
+        }
+
     }
 
     void FixedUpdate()
