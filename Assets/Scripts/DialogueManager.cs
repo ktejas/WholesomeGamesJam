@@ -12,9 +12,30 @@ public class DialogueManager : MonoBehaviour
 
     private Queue<string> sentences;
 
+    public float delay = 0.3f;
+    private float originaldelay;
+
     void Start()
     {
+        originaldelay = delay;
         sentences = new Queue<string>();
+    }
+
+    void Update()
+    {
+        if (Input.GetButton("Submit") && delay <= 0)
+        {
+            delay = originaldelay;
+            DisplayNextSentence();
+        }
+    }
+
+    void FixedUpdate()
+    {
+        if(delay > 0)
+        {
+            delay -= Time.deltaTime;
+        }
     }
 
     public void StartDialogue(Dialogue dialogue)
