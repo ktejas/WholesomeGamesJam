@@ -6,6 +6,21 @@ public class DialogueTrigger : MonoBehaviour
 {
     public Dialogue dialogue;
 
+    public GameObject f;
+
+    private bool isHere;
+
+    void Update()
+    {
+
+        f.SetActive(isHere);
+
+        if(isHere && Input.GetKey("f"))
+        {
+            TriggerDialogue();
+        }
+    }
+
     public void TriggerDialogue()
     {
         FindObjectOfType<DialogueManager>().StartDialogue(dialogue);
@@ -15,7 +30,15 @@ public class DialogueTrigger : MonoBehaviour
     {
         if(otherCollider.gameObject.tag == "Player")
         {
-            TriggerDialogue();
+            isHere = true;
+        }
+    }
+
+    public void OnTriggerExit2D(Collider2D otherCollider)
+    {
+        if (otherCollider.gameObject.tag == "Player")
+        {
+            isHere = false;
         }
     }
 }
