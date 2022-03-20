@@ -5,12 +5,13 @@ using UnityEngine.UI;
 
 public class DialogueManager : MonoBehaviour
 {
-    public Text nameText;
     public Text dialogueText;
+    public Text dialogueText2;
 
     public Animator animator;
 
     private Queue<string> sentences;
+    private Queue<string> sentences2;
 
     public float delay = 0.3f;
     private float originaldelay;
@@ -19,6 +20,7 @@ public class DialogueManager : MonoBehaviour
     {
         originaldelay = delay;
         sentences = new Queue<string>();
+        sentences2 = new Queue<string>();
     }
 
     void Update()
@@ -42,14 +44,19 @@ public class DialogueManager : MonoBehaviour
     {
         animator.SetBool("IsOpen", true);
 
-        nameText.text = dialogue.name;
-
         sentences.Clear();
+        sentences2.Clear();
 
         foreach(string sentence in dialogue.sentences)
         {
             sentences.Enqueue(sentence);
         }
+
+        foreach (string sentence2 in dialogue.sentences2)
+        {
+            sentences2.Enqueue(sentence2);
+        }
+
 
         DisplayNextSentence();
     }
@@ -65,6 +72,9 @@ public class DialogueManager : MonoBehaviour
         string sentence = sentences.Dequeue();
         StopAllCoroutines();
         StartCoroutine(TypeSentence(sentence));
+
+        string sentence2 = sentences2.Dequeue();
+        dialogueText2.text = sentence2;
     }
 
     IEnumerator TypeSentence(string sentence)
