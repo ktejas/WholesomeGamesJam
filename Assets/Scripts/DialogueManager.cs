@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class DialogueManager : MonoBehaviour
 {
@@ -15,6 +16,8 @@ public class DialogueManager : MonoBehaviour
 
     public float delay = 0.3f;
     private float originaldelay;
+
+    bool ending;
 
     void Start()
     {
@@ -40,8 +43,10 @@ public class DialogueManager : MonoBehaviour
         }
     }
 
-    public void StartDialogue(Dialogue dialogue)
+    public void StartDialogue(Dialogue dialogue, bool finalDialogue)
     {
+
+        ending = finalDialogue;
         animator.SetBool("IsOpen", true);
 
         sentences.Clear();
@@ -90,5 +95,9 @@ public class DialogueManager : MonoBehaviour
     void EndDialogue()
     {
         animator.SetBool("IsOpen", false);
+        if (ending)
+        {
+            SceneManager.LoadScene("end");
+        }
     }
 }

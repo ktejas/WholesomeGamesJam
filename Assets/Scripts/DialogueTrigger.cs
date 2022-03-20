@@ -6,6 +6,8 @@ public class DialogueTrigger : MonoBehaviour
 {
     public Dialogue dialogue;
 
+    public bool finalDialogue;
+
     public GameObject f;
 
     private bool isHere;
@@ -23,7 +25,7 @@ public class DialogueTrigger : MonoBehaviour
 
     public void TriggerDialogue()
     {
-        FindObjectOfType<DialogueManager>().StartDialogue(dialogue);
+        FindObjectOfType<DialogueManager>().StartDialogue(dialogue, finalDialogue);
     }
 
     public void OnTriggerEnter2D(Collider2D otherCollider)
