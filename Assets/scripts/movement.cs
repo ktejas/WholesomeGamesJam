@@ -63,10 +63,6 @@ public class movement : MonoBehaviour
             anim.SetBool("up", false);
             anim.SetBool("down", false);
         }
-        else
-        {
-            FindObjectOfType<AudioManager>().Play("step");
-        }
 
     }
 
