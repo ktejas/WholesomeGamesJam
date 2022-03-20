@@ -14684,6 +14684,7 @@ MonoBehaviour:
     - Follow the rustling leaves. They will take you to the marshland. The earth
       tells me he went there.
     sentences2: []
+  finalDialogue: 0
   f: {fileID: 0}
 --- !u!4 &392213818 stripped
 Transform:
@@ -16069,6 +16070,7 @@ MonoBehaviour:
     - Stork
     - Stork
     - Stork
+  finalDialogue: 0
   f: {fileID: 839439864}
 --- !u!61 &525748461
 BoxCollider2D:
@@ -21827,6 +21829,7 @@ MonoBehaviour:
     - Sheep
     - Lion
     - Mr. Fox
+  finalDialogue: 0
   f: {fileID: 1806537295}
 --- !u!61 &892046414
 BoxCollider2D:
@@ -34051,6 +34054,7 @@ MonoBehaviour:
     - Ms. Gopher
     - Ms. Gopher
     - Ms. Gopher
+  finalDialogue: 0
   f: {fileID: 312139480}
 --- !u!61 &1446766665
 BoxCollider2D:
@@ -43441,6 +43445,7 @@ MonoBehaviour:
     - Bobby
     - Lion
     - Bear
+  finalDialogue: 1
   f: {fileID: 759439201}
 --- !u!61 &1752661958
 BoxCollider2D:
