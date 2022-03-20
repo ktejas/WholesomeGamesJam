@@ -314,8 +314,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Whirlwind-Tigress (Designer/Programmer) - Freya Smith\r\n\nqxt2019 (Generalist
-    Dev - Art, Programming, Design)\r\n\ngetrekt (Programmer)\r\n\nTroisnyx (Musician)\r\n\nscarletshimmer
+  m_text: "Whirlwind-Tigress (Designer) - Freya Smith\r\n\nqxt2019 (Generalist Dev
+    - Art, Programming, Design)\r\n\ngetrekt (Programmer)\r\n\nTroisnyx (Musician)\r\n\nscarletshimmer
     (Shadow Member - Generalist) \r"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5e5c5caf435682843af3d5165521c317, type: 2}
