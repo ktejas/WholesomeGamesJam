@@ -16313,10 +16313,10 @@ MonoBehaviour:
     name: Stork
     sentences:
     - Good day, Stork! Are you not on your morning run ?
-    - Good morning, I'm resting today
+    - Good morning, I'm resting today.
     - If you're looking for little Bobby, he is not here.
-    - But fear not. He is save.
-    - do you hear that melody in the wind ? Follow it. It will surley lead you to
+    - But fear not, he is safe.
+    - Do you hear that melody in the wind ? Follow it. It will surely lead you to
       Bobby.
     sentences2:
     - Bear
@@ -21978,8 +21978,8 @@ MonoBehaviour:
     sentences:
     - Good afternoon, Mr.Fox!
     - What does the fox say today?
-    - Ring-a-ding-ding-ding-ding ? uh, I mean, hi
-    - There's been quite a commotion here lateley; everyone i know is looking for
+    - Ring-a-ding-ding-ding-ding ? Uh, I mean, hi
+    - There's been quite a commotion here lately; everyone i know is looking for
       a brown baby bear?
     - Do you happen to know him ?
     - Yes, we're looking for him.
@@ -21989,7 +21989,7 @@ MonoBehaviour:
     - Honey?... Bees?
     - I think we might know where to find him. In the far east of the woods, there
       are plenty of trees, and among them are bee colonies.
-    - He might be in trouble! -we have to go get him right now!
+    - He might be in trouble! We have to go get him right now!
     - Thank you, Mr. Fox!
     - But... but I didn't do anything.
     sentences2:
@@ -34232,7 +34232,7 @@ MonoBehaviour:
     name: Ms. Gopher
     sentences:
     - What's this?
-    - A Bear, a sheep and a lion out on an adventure?
+    - A bear, a sheep and a lion out on an adventure?
     - I hear little Bobby has gone missing. Word travels fast round these parts,
       y'know.
     - '*whistles* Say, do you hear that? That''s quite a breeze, isn''t it?'
@@ -43819,10 +43819,10 @@ MonoBehaviour:
     - I just wanted to be a big bear, like Mum and Dad, they always go and get food
       for me...
     - and they always wonder if I ever appreciate what they do.
-    - I'm sorry
+    - I'm sorry.
     - Don't worry yourself. Do you know why your Mum and Dad are able to do things
       you wish you could do?
-    - Because they don't do so alone. They are together and they have the wntire
+    - Because they don't do so alone. They are together and they have the entire
       village backing them
     - Will you be my friends ?
     - Of course!
